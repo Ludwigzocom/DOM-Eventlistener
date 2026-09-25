@@ -1,5 +1,6 @@
 const btn = document.querySelector("button");
-
+const listlength = document.querySelectorAll("lkst");
+listlength.length;
 const box = document.querySelector(".box");
 function writeText() {
   console.log("knappen klickades");
@@ -20,11 +21,12 @@ box.addEventListener("mouseout", () => {
 const ol = document.querySelector("ol");
 
 const itemList = [];
+const input = document.querySelector("input");
 
 box.addEventListener("click", () => {
   const li = document.createElement("li");
 
-  li.textContent = "New item added!";
+  li.textContent = input.value;
   itemList.push(li.textContent);
   ol.appendChild(li);
   console.log(itemList);
