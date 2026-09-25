@@ -22,3 +22,9 @@ addText.textContent = "Ny text av information";
 console.log(addText);
 
 main.appendChild(addText);
+
+window.addEventListener("keydown", (e) => {
+  if (e.key == "Enter") {
+    console.log("hello world");
+  }
+});
