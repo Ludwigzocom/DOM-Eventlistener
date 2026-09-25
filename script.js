@@ -66,7 +66,3 @@ array
 obj
 trycatch
 */
-
-const namnSet = prompt("ANge namn");
-
-console.log(namnSet.toUpperCase());
